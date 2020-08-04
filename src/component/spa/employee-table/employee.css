@@ -1,0 +1,19 @@
+div{
+    margin:20px;
+}
+
+thead{
+    background-color: bisque;
+}
+
+th{
+    width: 20%;
+}
+
+tbody{
+    border:1px solid grey;
+}
+
+td{
+    border: 1px solid grey;
+}

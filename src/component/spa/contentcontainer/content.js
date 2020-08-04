@@ -5,6 +5,7 @@ import Home from './home/home';
 import Register from './register/register';
 import Login from './login/login';
 import Blogs from '../axios-blog/Blogs';
+import Employees from '../employee-table/Employees';
 
 
 class Content extends React.Component {
@@ -19,6 +20,8 @@ class Content extends React.Component {
                 <Route path='/register' component={Register}></Route>
                 <Route path='/login' component={Login}></Route>
                 <Route path='/blogs' component={Blogs}></Route>
+                <Route path='/employees' component={Employees}></Route>
+
             </Switch>   
         </div>
          );
