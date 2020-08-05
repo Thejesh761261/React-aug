@@ -36,6 +36,9 @@ class NavigationBar extends React.Component {
                     <li style={menuitem}>
                         <Link to="/employees" style={{ textDecoration:'none'}}>Employee</Link>
                     </li>
+                    <li style={menuitem}>
+                        <Link to="/addfriend" style={{ textDecoration:'none'}}>Add Friend</Link>
+                    </li>
                 </ul>
             </span>
 

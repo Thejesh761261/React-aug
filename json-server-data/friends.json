@@ -1,0 +1,41 @@
+{
+  "allfriends": [
+    {
+      "name": "Thejesh",
+      "since": 16,
+      "id": 1
+    },
+    {
+      "name": "Thej",
+      "since": 2,
+      "id": 2
+    },
+    {
+      "name": "Ths",
+      "since": 13,
+      "id": 3
+    },
+    {
+      "name": "Theju",
+      "since": 12,
+      "id": 4
+    }
+  ],
+  "allfriendsdetails": [
+    {
+      "id": 1,
+      "relatedTo_id": 1,
+      "location": "Agra"
+    },
+    {
+      "id": 2,
+      "relatedTo_id": 2,
+      "location": "Bangalore"
+    },
+    {
+      "relatedTo_id": 3,
+      "location": "Singapore",
+      "id": 3
+    }
+  ]
+}
