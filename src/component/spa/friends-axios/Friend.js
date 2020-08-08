@@ -110,11 +110,33 @@ class Friend extends React.Component {
                                     state: {myid: id}
                                 })
     }
+
+    getSearch=(e)=>{
+        let searchV = e.target.value
+        if(searchV==''){
+            this.getAllFriends()
+        }
+        this.setState({searchValue: searchV})
+        console.log(searchV);
+        let searchF = this.state.friends.filter(f=>{
+                                return f.name.toLowerCase().match(searchV.toLowerCase())
+                            })
+        console.log(searchF);    
+        this.setState({friends: searchF})                
+
+    }
   
     render() { 
         return ( 
-    
+
+            
                <div>
+                   <div>
+                       <label>Search: </label>
+                       <input type="text" value={this.state.searchValue} onChange={this.getSearch}></input>
+                       <br></br>
+                       SearchValue: {this.state.searchValue}
+            </div>
                     <button onClick={this.openAddFriend}>Add Friend</button>
                     <br></br>
                     <table border="1">
